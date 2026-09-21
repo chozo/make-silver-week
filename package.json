@@ -1,0 +1,13 @@
+{
+  "name": "make-silver-week",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-dist.mjs",
+    "check": "node --check game.js",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
